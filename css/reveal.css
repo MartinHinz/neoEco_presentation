@@ -1166,7 +1166,6 @@ body {
 .reveal .overlay .viewport {
   position: absolute;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 40px;
@@ -1363,3 +1362,90 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * My Additions
+ *********************************************/
+.reveal p.caption-wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  width: 500px;
+  padding: 0.5em; }
+
+.reveal p.caption {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  font-size: 0.33em;
+  font-style: italic;
+  text-align: left;
+  width: 500px; }
+
+.reveal p.caption-wrapper:before {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px); }
+
+.reveal div.caption {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px; }
+
+.reveal p.caption-wrapper-light-background {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  width: 500px;
+  padding: 0.5em; }
+
+.reveal p.caption-wrapper-light-background:before {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px); }
+
+div.dark-overlay {
+  position: fixed;
+  top: -10000px;
+  left: -10000px;
+  height: 20000px;
+  width: 20000px;
+  background-color: black;
+  opacity: 0.66;
+  z-index: -1; }
+
+.left-column {
+  left: -8.33%;
+  text-align: left;
+  float: left;
+  width: 50%;
+  z-index: -10; }
+
+.right-column {
+  left: 31.25%;
+  top: 75px;
+  float: right;
+  z-index: -10;
+  width: 50%;
+  text-align: left; }
